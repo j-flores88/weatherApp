@@ -2,6 +2,6 @@ import { getForecast } from "./getForecast";
 import { getWeatherInfo } from "./getWeatherInfo";
 
 
-getWeatherInfo('reno');
-getForecast('reno')
+getWeatherInfo('south lake tahoe');
+getForecast('south lake tahoe')
 
