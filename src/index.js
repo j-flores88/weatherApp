@@ -1,6 +1,7 @@
 import { getForecast } from "./getForecast";
 import { getWeatherInfo } from "./getWeatherInfo";
 
+
 const submitBtn = document.getElementById('submit');
 const input = document.getElementById('input')
 
