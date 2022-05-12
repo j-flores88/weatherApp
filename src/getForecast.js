@@ -10,12 +10,11 @@ const dayThreeIcon = document.getElementById('dayThreeIcon');
 const dayThreeWeather = document.getElementById('dayThreeWeather');
 const dayThreeDegrees = document.getElementById('dayThreeDegrees');
 
-import { getWeatherIcon } from "./getWeatherIcon";
 import { getForecastIcons } from "./getForecastIcons";
 
 export const getForecast = async(location) => {
     try {
-        const response = await fetch(`http://api.openweathermap.org/data/2.5/forecast?q=${location}&APPID=3891df82bc1b5cf3040f45ec220c6d43&units=imperial&cnt=3`);
+        const response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${location}&APPID=3891df82bc1b5cf3040f45ec220c6d43&units=imperial&cnt=3`);
         const localWeather = await response.json()
         const { list } = localWeather
 
