@@ -1,7 +1,13 @@
 import { getForecast } from "./getForecast";
 import { getWeatherInfo } from "./getWeatherInfo";
 
+const submitBtn = document.getElementById('submit');
+const input = document.getElementById('input')
 
-getWeatherInfo('south lake tahoe');
-getForecast('south lake tahoe')
+submitBtn.addEventListener('click', () => {
+    getWeatherInfo(input.value.trim());
+    getForecast(input.value.trim())
+});
 
+getWeatherInfo('reno');
+getForecast('reno')

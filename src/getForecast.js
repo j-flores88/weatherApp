@@ -23,8 +23,6 @@ export const getForecast = async(location) => {
         let iconTwo = getForecastIcons(list[1].weather[0].id);
         let iconThree = getForecastIcons(list[2].weather[0].id);
 
-        console.log(list[1])
-
         dayOneIcon.innerHTML = `
             <img src="${iconOne}" width="50px">
         `
@@ -32,7 +30,7 @@ export const getForecast = async(location) => {
             <h5>${list[0].weather[0].description.toUpperCase()}</h5>
         `
         dayOneDegrees.innerHTML = `
-            <h5>${Math.round(list[0].main.temp_max)}°/${Math.round(list[0].main.temp_min)}</h5>
+            <h5>${Math.round(list[0].main.temp_max)}°/${Math.round(list[0].main.temp_min)}°</h5>
         `
 
         dayTwoIcon.innerHTML = `
@@ -42,7 +40,7 @@ export const getForecast = async(location) => {
             <h5>${list[1].weather[0].description.toUpperCase()}</h5>
         `
         dayTwoDegrees.innerHTML = `
-            <h5>${Math.round(list[1].main.temp_max)}°/${Math.round(list[1].main.temp_min)}</h5>
+            <h5>${Math.round(list[1].main.temp_max)}°/${Math.round(list[1].main.temp_min)}°</h5>
         `
 
         dayThreeIcon.innerHTML = `
@@ -52,7 +50,7 @@ export const getForecast = async(location) => {
             <h5>${list[2].weather[0].description.toUpperCase()}</h5>
         `
         dayThreeDegrees.innerHTML = `
-            <h5>${Math.round(list[2].main.temp_max)}°/${Math.round(list[2].main.temp_min)}</h5>
+            <h5>${Math.round(list[2].main.temp_max)}°/${Math.round(list[2].main.temp_min)}°</h5>
         `
     } catch(err) {
         throw new Error(err)
