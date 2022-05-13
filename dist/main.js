@@ -56,7 +56,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _getForecast__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./getForecast */ \"./src/getForecast.js\");\n/* harmony import */ var _getWeatherInfo__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./getWeatherInfo */ \"./src/getWeatherInfo.js\");\n\n\n\n\nconst submitBtn = document.getElementById('submit');\nconst input = document.getElementById('input')\n\nsubmitBtn.addEventListener('click', () => {\n    // getWeatherInfo(input.value.trim());\n    // getForecast(input.value.trim())\n});\n\n// getWeatherInfo('reno');\n// getForecast('reno')\n\n//# sourceURL=webpack://weatherapp/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _getForecast__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./getForecast */ \"./src/getForecast.js\");\n/* harmony import */ var _getWeatherInfo__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./getWeatherInfo */ \"./src/getWeatherInfo.js\");\n\n\n\n\nconst submitBtn = document.getElementById('submit');\nconst input = document.getElementById('input')\n\nsubmitBtn.addEventListener('click', () => {\n    ;(0,_getWeatherInfo__WEBPACK_IMPORTED_MODULE_1__.getWeatherInfo)(input.value.trim());\n    (0,_getForecast__WEBPACK_IMPORTED_MODULE_0__.getForecast)(input.value.trim())\n});\n\n(0,_getWeatherInfo__WEBPACK_IMPORTED_MODULE_1__.getWeatherInfo)('reno');\n(0,_getForecast__WEBPACK_IMPORTED_MODULE_0__.getForecast)('reno')\n\n//# sourceURL=webpack://weatherapp/./src/index.js?");
 
 /***/ }),
 
