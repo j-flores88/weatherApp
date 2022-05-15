@@ -19,8 +19,6 @@ export const getWeatherInfo = async(location, units) => {
         let sunsetTime = getTimeStamp(sys.sunset, timezone);
         currentWeatherIcon = getWeatherIcon(weather[0].id);
 
-        console.log(timezone)
-
         iconDiv.innerHTML = `
             <img src="${currentWeatherIcon}">
         `
