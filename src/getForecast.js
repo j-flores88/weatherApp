@@ -12,9 +12,9 @@ const dayThreeDegrees = document.getElementById('dayThreeDegrees');
 
 import { getForecastIcons } from "./getForecastIcons";
 
-export const getForecast = async(location) => {
+export const getForecast = async(location, units) => {
     try {
-        const response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${location}&APPID=3891df82bc1b5cf3040f45ec220c6d43&units=imperial&cnt=3`);
+        const response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${location}&APPID=3891df82bc1b5cf3040f45ec220c6d43&units=${units}&cnt=3`);
         const localWeather = await response.json()
         const { list } = localWeather
 
